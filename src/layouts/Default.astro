@@ -1,0 +1,21 @@
+---
+import { SEO, Props as SeoProps } from "astro-seo";
+import { Navbar, Font, Metas } from "@components";
+
+export interface Props extends SeoProps {}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <Font
+      url="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Poppins&family=Quicksand&family=Rubik&display=swap"
+    />
+    <Metas favicon="/favicon.ico" />
+    <SEO {...Astro.props} />
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+  </body>
+</html>
