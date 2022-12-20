@@ -1,3 +1,5 @@
+//https://github.com/sebholstein/astro-google-fonts-optimizer/
+
 const userAgents: { name: string; ua: string }[] = [
   {
     name: "woff",

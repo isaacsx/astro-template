@@ -1,4 +1,6 @@
 ---
+//https://github.com/sebholstein/astro-google-fonts-optimizer/
+
 import { downloadFontCSS } from "@utils/fonts";
 
 export interface Props {
@@ -22,7 +24,7 @@ const contents = await Promise.all(urls.map((url) => downloadFontCSS(url)));
 {
   contents.map((styles) => (
     <>
-      <style type="text/css" set:html={styles} is:inline></style>
+      <style type="text/css" set:html={styles} is:inline />
     </>
   ))
 }
